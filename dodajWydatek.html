@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Dodaj wydatek</title>
+	<meta name="description" content="Dodaj wydatek  -  prowadzenie budżetu osbostego." />
+	<meta name="keywords" content="budżet, osobisty, domowy" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id="container">
+
+		<header>
+			<h1 class="title"><span style="color: #091A2D"></i></span>
+				Aplikacja - ogarniacz budżetu osobistego !<h1>
+		</header>
+
+		<nav class="topnav">
+
+			<ol>
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Dodaj przychód</a></li>
+				<li><a href="#" style="text-decoration: underline;">Dodaj wydatek</a></li>
+				<li><a href="#">Przeglądaj bilans</a></li>
+				<li><a href="#">Wyloguj się</a></li>
+			</ol>
+		</nav>
+
+
+		<main>
+			<form id="addExpense">
+				<div class="expense">
+					<label for="amount" class="titleForm">Kwota:</label>
+					<input type="amount" id="amount" amount="amount" />
+				</div>
+
+				<div class="expense">
+					<label for="dateExpense" class="titleForm">Data:</label>
+					<input type="dateExpense" id="dateExpense" amount="dateExpense" placeholder="rrrr-mm-dd"
+						onfocus="this.placeholder=''" onblur="this.placeholder='rrrr-mm-dd" />
+				</div>
+
+				<div class="paymentAndCategories">
+					<span class="titleForm"> Sposób płatności:<br /></span>
+					<label class="paymentMetod"><input type="radio" name="paymentMetod" value="cash">Gotówka</label>
+					<label class="paymentMetod"><input type="radio" name="paymentMetod" value="debitCard" checked>Karta
+						debetowa
+					</label>
+					<label class="paymentMetod"><input type="radio" name="paymentMetod" value="creditCard">Karta
+						kredytowa</label>
+				</div>
+
+				<div class="paymentAndCategories">
+					<span class="titleForm"> Kategoria płatności:<br /></span>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="food">Jedzenie</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="telecommunication">Telekomunikacja</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="healthcare">Opieka
+						zdrowotna
+					</label><br />
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="clothes">Ubranie</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="hygiene">Higiena</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="children">Dzieci
+					</label><br />
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="entertainment">Rozrywka</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="tour">Wycieczka</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="flat">Mieszkanie
+					</label><br />
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="Books">Szkolenia</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="savings">Książki</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="pension">Emerytura
+					</label> <br />
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="debt repayment">Spłata
+						długów</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="donation">Darowizna</label>
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="other expenses">Transport
+					</label><br />
+					<label class="paymentMetod"><input type="radio" name="paymentCategory"
+							value="debt repayment">Oszczędności
+					</label>
+
+					<label class="paymentMetod"><input type="radio" name="paymentCategory" value="other expenses">Inne
+					</label><br />
+				</div>
+
+				<div class="paymentAndCategories">
+					<span class="titleForm"> Komentarz (opcjonalnie:)<br /></span>
+					<textarea name="commnets" rows="2" cols="30">Tutaj wpisz komentarz...</textarea>
+				</div>
+
+
+				<div>
+					<input type="submit" value="Dodaj">
+					<input type="submit" value="Anuluj">
+				</div>
+
+			</form>
+
+
+
+		</main>
+
+		<footer>
+			"Przepadnie bogactwo pędem wiatru zdobyte, kto gromadzi powoli - pomnaża" (Prz 13,11)
+		</footer>
+
+	</div>
+
+</body>
+
+</html>

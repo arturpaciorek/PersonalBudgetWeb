@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Przeglądaj bilans</title>
+	<meta name="description" content="Przeglądaj bilans -  budżet osobisty ." />
+	<meta name="keywords" content="budżet, osobisty, domowy" />
+
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet" />
+
+
+
+</head>
+
+<body>
+
+	<div id="container">
+
+		<header>
+			<h1 class="title"><span style="color: #091A2D"></span>
+				Aplikacja - ogarniacz budżetu osobistego !</h1>
+		</header>
+
+		<nav class="topnav">
+
+			<ol>
+				<li><a href="#">Menu główne</a></li>
+				<li><a href="#">Dodaj przychód</a></li>
+				<li><a href="#">Dodaj wydatek</a></li>
+				<li><a href="#" style="text-decoration: underline;">Przeglądaj bilans</a></li>
+
+				<li><a href="#">Wyloguj się</a></li>
+			</ol>
+		</nav>
+
+		<div class="dropdown">
+			<button class="dropbutton">Bieżący miesiąc</button>
+			<div class="dropdown-content">
+				<a href="#">Bieżący miesiąc</a>
+				<a href="#">Poprzedni miesiąc</a>
+				<a href="#">Bieżący rok</a>
+				<a href="#">Wybrany okres</a>
+			</div>
+		</div>
+
+
+		<main>
+			<div class="main">
+
+				<div>
+					<article>
+						<div id="expensesTable">
+							<table class="balansTable">
+								<caption> Zestawienie przychodów dla poszczególnych kategorii w okresie ...</caption>
+								<tr>
+									<th scope="col">Nazwa kategorii</th>
+									<th scope="col">Suma przychodów dla danej kategorii</th>
+								</tr>
+								<tr>
+									<th scope="row">Wynagrodzenie</th>
+									<th>12345.3</th>
+								</tr>
+								<tr>
+									<th scope="row">Odsetki bankowe</th>
+									<th>126.57</th>
+								</tr>
+								<tr>
+									<th scope="row">Sprzedaż na allegro</th>
+									<th>6132.57</th>
+								</tr>
+							</table>
+						</div>
+						<div id="incomesTable">
+							<table class="balansTable">
+								<caption> Zestawienie wydatków dla poszczególnych kategorii w okresie ...</caption>
+								<tr>
+									<th scope="col">Nazwa kategorii</th>
+									<th scope="col">Suma przychodów dla danej kategorii</th>
+								</tr>
+								<tr>
+									<th scope="row">Mieszkanie</th>
+									<th>1000.</th>
+								</tr>
+								<tr>
+									<th scope="row">Transport</th>
+									<th>200</th>
+								</tr>
+								<tr>
+									<th scope="row">Telekomunikacja</th>
+									<th>120</th>
+								</tr>
+								<tr>
+									<th scope="row">Opieka zdrowotna</th>
+									<th>0</th>
+								</tr>
+							</table>
+						</div>
+						<div style="clear:both"></div>
+					</article>
+					<article>
+						<div id="piechart">
+						</div>
+
+						<div id="analysisOfExpenses">
+							<table>
+								<tr>
+									<td class="cellTitle">Suma przychodów:</td>
+									<td class="cellResult">2000 zł</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<td class="cellTitle">Suma wydatków:</td>
+									<td class="cellResult">586.56 zł</td>
+								</tr>
+							</table>
+
+
+						</div>
+					</article>
+				</div>
+
+			</div>
+		</main>
+
+		<footer>
+			"Przepadnie bogactwo pędem wiatru zdobyte, kto gromadzi powoli - pomnaża" (Prz 13,11)
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
